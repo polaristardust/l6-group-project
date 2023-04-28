@@ -1,5 +1,4 @@
-import React from 'react';
-import './stylearticle.css';
+import logo from './logo.svg';
 import './App.css';
 
 function Info() {
@@ -103,7 +102,5 @@ function Info() {
   
   );
 }
-    
-  
-  </body>
-  </html>
+
+export default App;
