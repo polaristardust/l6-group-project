@@ -38,7 +38,7 @@ function Info() {
           <div class="w3-row w3-padding-32">
           <div class="w3">
             <p></p>
-            <img src="images/scam website.png" class="w3-round w3-margin-bottom" alt="Random Name" style="width:80%">
+            <img src={scamWebsite} alt="scam website"/>
           </div>
         </div> <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
           <h2 class="w3-wide">Ways to Keep Yourself Safe</h2>
@@ -66,7 +66,7 @@ function Info() {
           <div class="w3-row w3-padding-32">
             <div class="w3">
               <p></p>
-              <img src="images/security.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:80%">
+              <img src={security} alt="security"/>s
             </div>
           </div>
         </div>
@@ -75,7 +75,7 @@ function Info() {
         <div class="w3-row w3-padding-32">
           <div class="w3">
             <p></p>
-            <img src="images/scam website.png" class="w3-round w3-margin-bottom" alt="Random Name" style="width:80%">
+            <img src={scamWebsite} alt="scam website"/>
           </div>
         </div> <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
           <h2 class="w3-wide">Using a VPN</h2>
@@ -91,7 +91,7 @@ function Info() {
           <div class="w3-row w3-padding-32">
             <div class="w3">
               <p></p>
-              <img src="images/vpn.png" class="w3-round w3-margin-bottom" alt="Random Name" style="width:80%">
+              <img src={vpn} alt="vpn"/>
             </div>
           </div>
 
