@@ -1,0 +1,22 @@
+.nav-bar {
+    color: #fff;
+    font-family: Courier;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3%;
+}
+
+h1 {
+    display: inline;
+    border: solid 3px #fff;
+    padding: 10px 15px;
+}
+
+.pages {
+    display: flex;
+}
+
+h2 {
+    padding-left: 50px;
+}
