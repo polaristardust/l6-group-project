@@ -1,6 +1,6 @@
-import './game.css';
+import './Game.css';
 
-function game() {
+function Game() {
 
     const myStyle = {
         margin: "0 auto",
@@ -15,4 +15,5 @@ function game() {
 
     )
 }
-export default game;
+
+export default Game;
