@@ -13,10 +13,6 @@ function App() {
       backgroundSize: 'cover'
     }}>
       <NavBar />
-<<<<<<< HEAD
-=======
-      <Game />
->>>>>>> 12c93946b3b567dd8c0910ed1cff92c83f820cde
       <Info />
     </div>
     
