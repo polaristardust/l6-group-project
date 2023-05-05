@@ -108,4 +108,4 @@ function Info() {
   );
 }
 
-export default App;
+export default Info;
