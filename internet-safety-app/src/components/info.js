@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './Info.css'
 import 'https://www.w3schools.com/w3css/4/w3.css';
 import 'https://fonts.googleapis.com/css?family=Roboto';
