@@ -1,0 +1,28 @@
+#gray-background{
+    background-color: #d6d6d6;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+#inner-gray{
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+#red-bar{
+    height: 10px;
+    background: rgb(255, 0, 0)
+}
+
+.centerImage {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60px;
+    height:30px;
+}
+
+.centerText {
+    text-align: center;
+}

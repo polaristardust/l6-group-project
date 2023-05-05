@@ -3,10 +3,11 @@ import 'https://www.w3schools.com/w3css/4/w3.css';
 import 'https://fonts.googleapis.com/css?family=Roboto';
 import 'https://fonts.googleapis.com/css?family=Montserrat';
 import 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css';
+import { Link } from "react-router-dom";
 
 function Info() {
   const [textValue, settextValue] = useState("");
-  const [currentPage, setCurrentPage] = useState(<PageOne />);
+  const [currentPage, setCurrentPage] = useState(<NavBar />);
 
   function inputChanged(e){
     setTextValue(e.target.value)
@@ -21,7 +22,7 @@ function Info() {
     <NavBar />
     <h1>Game</h1>
     {currentPage}
-    <button onClick={()=>changePage(<PageOne />)}>Page One</button><button onClick={()=>changePage(<PageTwo/>)}>Page Two</button>
+    <button onClick={()=>changePage(<NavBar />)}>Page One</button><button onClick={()=>changePage(<Game/>)}>Page Two</button>
     <div className="w3-content" style={{maxWidth: '1200px'}}>
 
       <header>
