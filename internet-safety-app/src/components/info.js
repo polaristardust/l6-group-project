@@ -7,8 +7,25 @@ import 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-aweso
 import './Info.css'
 
 function Info() {
+  const [textValue, settextValue] = useState("");
+  const [currentPage, setCurrentPage] = useState(<PageOne />);
+
+  function inputChanged(e){
+    setTextValue(e.target.value)
+  }
+
+  function changePage(page) {
+    setCurrentPage(page);
+  }
+  
   return (
+    <div className="Info">
+    <NavBar />
+    <h1>Game</h1>
+    {currentPage}
+    <button onClick={()=>changePage(<PageOne />)}>Page One</button><button onClick={()=>changePage(<PageTwo/>)}>Page Two</button>
     <div className="w3-content" style={{maxWidth: '1200px'}}>
+      
       <header>
         <a href="game.html">Game</a>
         <a href="index.html" id="curr">Home</a>
@@ -99,9 +116,9 @@ function Info() {
               <img src={vpn} alt="vpn"/>
             </div>
           </div>
-
       </div>
     </div>
+  </div>
   </div>
   </div>
   
