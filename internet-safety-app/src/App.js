@@ -1,7 +1,8 @@
 import logo from './logo.svg';
 import './App.css';
 import NavBar from './components/NavBar.js';
-import BackgroundImage from './components/BackgroundImage.jpg'
+import BackgroundImage from './components/images/BackgroundImage.jpg'
+import Info from './components/Info'
 import Game from './components/Game.js'
 
 function App() {
@@ -11,7 +12,7 @@ function App() {
       backgroundSize: 'cover'
     }}>
       <NavBar />
-      <Game />
+      <Info />
     </div>
     
   );
