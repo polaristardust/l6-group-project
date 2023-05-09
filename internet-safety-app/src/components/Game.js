@@ -1,43 +1,55 @@
 import './Game.css';
 import { Link } from "react-router-dom";
+import CautionSign from './images/CautionSign.png'
+import StartNow from './images/StartNow.png'
+import DropdownArrow from './images/DropdownArrow.png'
 
 function Game() {
  
     return (
-        
-        <div>
+        <div id="white-background">
             <div>
-                <h1>{'>>'}!! -You-have won an $90-CVS-Gift-Card</h1>
-                <div>
-                    <img src="./images/cautionSign.png"/>
-                    <h5>-CVS Rewards- afjngbapeofkdsfn@cvs.pharmacy.us via sendgrid.net</h5>
-                    <h6>to me</h6>
+                <h2 id="subject">{'>>'}!! -You-have won an $90-CVS-Gift-Card</h2>
+                <div id="address">
+                    <img src={CautionSign} width="45" height="40"/>
+                    <div id="address-text">
+                        <div id="address-from">
+                            <h5>-CVS Rewards- afjngbapeofkdsfn@cvs.pharmacy.us</h5>
+                            <p id="address-info"><u>via</u> sendgrid.net</p>
+                        </div>
+                        <div id="address-to">
+                            <p>to me</p>
+                            <img id="dropdown"src={DropdownArrow} width="20" height="20"/>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div id="gray-background">
-                <div id="inner-gray">
-                    <h1 style={{color: "red"}}>
-                        <b>EXCLUSIVE OFFER!</b>
-                    </h1>
+                <div id="inner-white">
+                    <h2 style={{color: "#D30000"}}>
+                        <em><b>EXCLUSIVE OFFER!</b></em>
+                    </h2>
                     <div id="red-bar"></div>
                     <h3>
                         Dear Pharmacy Customer,,<br/><br/>
 
                         <b>Congratulations!</b> You’ve been selected to recieved an <b>EXCLUSIVE OFFER!</b><br/><br/>
 
-                        Enter your correct information in this short survey about your experiences with Pharmacy and receive your exclusive reward offer (<b>minimum value of $90</b>) for participating.
+                        Enter your correct information in this short survey about your experiences with Pharmacy and receive your exclusive reward offer <em><b>(minimum value of $90)</b></em> for participating.
                     </h3>
-                    <img className="centerImage" src="./images/startNow.jpg"/>
-                    <h3 className="centerText">
-                        You have <b>4 minutes and 14 seconds</b> to activate this offer!    
-                    </h3>
+                    <div className="center">
+                        <img src={StartNow} width="120" height="40"/>
+                        <h3 className="centerText">
+                            You have <b>4 minutes and 14 seconds</b> to activate this offer!    
+                        </h3>
+                    </div>
                     <div id="red-bar"></div>
                 </div>
 
-                <h5 className="centerText">
+                <p className="center">
                     This rewards program is not endorsed, sponsored by, or affiliated with any merchants listed above.<br/>
                     Registered trademarks are the property of their own respective owners.
-                </h5>
+                </p>
             </div>
         </div>
     )
