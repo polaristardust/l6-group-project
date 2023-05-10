@@ -3,7 +3,8 @@ import { Link } from "react-router-dom";
 import CautionSign from './images/CautionSign.png'
 import StartNow from './images/StartNow.png'
 import DropdownArrow from './images/DropdownArrow.png'
-import Flag1Found from './FlagCount.js'
+// import Flag1Found from './FlagCount.js'
+import {Flag1, Flag2} from './FlagCount.js'
 
 function Game(props) {
  
@@ -16,7 +17,9 @@ function Game(props) {
                     <img src={CautionSign} alt="caution sign" width="45" height="40"/>
                     <div id="address-text">
                         <div id="address-from">
-                            <h5>-CVS Rewards- </h5><h5>afjngbapeofkdsfn@cvs.pharmacy.us</h5>
+                            <h5>-CVS Rewards-
+                            <Flag2 onFlagFound={props.onFlagFound}>afjngbapeofkdsfn@cvs.pharmacy.us</Flag2>
+                            </h5>
                             <p id="address-info"><u>via</u> sendgrid.net</p>
                         </div>
                         <div id="address-to">
@@ -40,7 +43,7 @@ function Game(props) {
                         Enter your correct information in this short survey about your experiences with Pharmacy and receive your exclusive reward offer <em><b>(minimum value of $90)</b></em> for participating.
                     </h3>
                     <div className="center">
-                        <img src={StartNow} alt="start now" width="120" height="40"/>
+                        <Flag1 onFlagFound={props.onFlagFound}/>
                         <h3 className="centerText">
                             You have <b>4 minutes and 14 seconds</b> to activate this offer!    
                         </h3>
@@ -53,7 +56,6 @@ function Game(props) {
                     Registered trademarks are the property of their own respective owners.
                 </p>
             </div>
-            <Flag1Found onFlagFound={props.onFlagFound}/>
         </div>
     )
 }
