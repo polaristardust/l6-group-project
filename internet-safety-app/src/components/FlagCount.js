@@ -31,9 +31,9 @@ function Flag2Found(props) {
     }
 
     return (
-        <div>
+        // <div>
             <span id="flag-2" onClick={clickedFlag2Found}>{props.children}</span>
-        </div>
+        /* </div> */
     )
 }
 
