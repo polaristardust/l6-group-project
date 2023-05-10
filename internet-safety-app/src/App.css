@@ -36,3 +36,12 @@
     transform: rotate(360deg);
   }
 }
+
+#red-flags-counter {
+  color:#fff;
+  font-size: larger;
+  font-family: Courier;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 3%;
+}

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import StartNow from './images/StartNow.png'
 
 let foundFlags = 0;
 
@@ -14,35 +15,35 @@ function Flag1Found(props) {
 
     return (
         <div>
-            <button onClick={clickedFlag1Found}>PLACEHOLDER1</button>
+            <img src={StartNow} onClick={clickedFlag1Found} alt="start now" width="120" height="40"/>
         </div>
     )
 }
 
-function Flag2Found() {
+function Flag2Found(props) {
     const [foundFlag2, setFlag2Found] = useState(false);
 
     function clickedFlag2Found() {
-        if (foundFlag2) {
+        if (!foundFlag2) {
             setFlag2Found(true);
-            foundFlags++;
+            props.onFlagFound();
         }
     }
 
     return (
         <div>
-            <button onClick={clickedFlag2Found}>PLACEHOLDER2</button>
+            <span id="flag-2" onClick={clickedFlag2Found}>{props.children}</span>
         </div>
     )
 }
 
-function Flag3Found() {
+function Flag3Found(props) {
     const [foundFlag3, setFlag3Found] = useState(false);
 
     function clickedFlag3Found() {
         if (foundFlag3) {
             setFlag3Found(true);
-            foundFlags++;
+            props.onFlagFound();
         }
     }
 
@@ -54,13 +55,13 @@ function Flag3Found() {
 }
 
 
-function Flag4Found() {
+function Flag4Found(props) {
     const [foundFlag4, setFlag4Found] = useState(false);
 
     function clickedFlag4Found() {
         if (foundFlag4) {
             setFlag4Found(true);
-            foundFlags++;
+            props.onFlagFound();
         }
     }
 
@@ -72,7 +73,12 @@ function Flag4Found() {
 }
 
 
-export default Flag1Found
-// export const Flag2 = Flag2Found();
+// export default Flag1Found
+// module.exports = {
+//     Flag1: Flag1Found,
+//     Flag2: Flag2Found
+// }
+export const Flag1 = Flag1Found;
+export const Flag2 = Flag2Found;
 // export const Flag3 = Flag3Found();
 // export const Flag4 = Flag4Found();
