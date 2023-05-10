@@ -6,20 +6,21 @@ import DropdownArrow from './images/DropdownArrow.png'
 
 function Game() {
  
+
     return (
         <div id="white-background">
             <div>
                 <h2 id="subject">{'>>'}!! -You-have won an $90-CVS-Gift-Card</h2>
                 <div id="address">
-                    <img src={CautionSign} width="45" height="40"/>
+                    <img src={CautionSign} alt="caution sign" width="45" height="40"/>
                     <div id="address-text">
                         <div id="address-from">
-                            <h5>-CVS Rewards- afjngbapeofkdsfn@cvs.pharmacy.us</h5>
+                            <h5>-CVS Rewards- </h5><h5>afjngbapeofkdsfn@cvs.pharmacy.us</h5>
                             <p id="address-info"><u>via</u> sendgrid.net</p>
                         </div>
                         <div id="address-to">
                             <p>to me</p>
-                            <img id="dropdown"src={DropdownArrow} width="20" height="20"/>
+                            <img id="dropdown"src={DropdownArrow} alt="drop down arrow" width="20" height="20"/>
                         </div>
                     </div>
                 </div>
@@ -38,7 +39,7 @@ function Game() {
                         Enter your correct information in this short survey about your experiences with Pharmacy and receive your exclusive reward offer <em><b>(minimum value of $90)</b></em> for participating.
                     </h3>
                     <div className="center">
-                        <img src={StartNow} width="120" height="40"/>
+                        <img src={StartNow} alt="start now" width="120" height="40"/>
                         <h3 className="centerText">
                             You have <b>4 minutes and 14 seconds</b> to activate this offer!    
                         </h3>
