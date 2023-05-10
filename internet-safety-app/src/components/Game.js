@@ -1,6 +1,6 @@
 import './Game.css';
 import { Link } from "react-router-dom";
-import CautionSign from './images/cautionSign.png'
+import CautionSign from './images/CautionSign.png'
 import StartNow from './images/StartNow.png'
 import DropdownArrow from './images/DropdownArrow.png'
 import Flag1Found from './FlagCount.js'
