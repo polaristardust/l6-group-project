@@ -1,6 +1,6 @@
 import './Game.css';
 import { Link } from "react-router-dom";
-import CautionSign from './images/cautionSign.png'
+import CautionSign from './images/CautionSign.png'
 import StartNow from './images/StartNow.png'
 import DropdownArrow from './images/DropdownArrow.png'
 // import Flag1Found from './FlagCount.js'
@@ -12,6 +12,7 @@ import Flag1Found from './FlagCount.js'
 function Game(props) {
 
     const [clicked, setClicked] = useState(Array(8).fill(false));
+    const [modalVisible, setModalVisible] = useState(true);
 
     function handleClick(index) {
         const updatedClicked = [...clicked];
@@ -22,6 +23,11 @@ function Game(props) {
 
     return (
         <div id="white-background">
+            <div id="instructions" style={(modalVisible)?{display:"block"}:{display:"none"}}>
+                <h3>Can you spot a scam?</h3>
+                <p>Look at the following page and click on any red flags that could indicate a scam.</p>
+                <button onClick={()=> setModalVisible(false)}>Start</button>
+            </div>
             <div>
                 <h2 id="subject" onClick={() => handleClick(0)} className={clicked[0] ? 'green-background' : ''}>{'>>'}!! -You-have won an $90-CVS-Gift-Card</h2>
                 <div id="address">
