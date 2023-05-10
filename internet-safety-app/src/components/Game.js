@@ -1,10 +1,11 @@
 import './Game.css';
 import { Link } from "react-router-dom";
-import CautionSign from './images/cautionSign.png'
+import CautionSign from './images/CautionSign.png'
 import StartNow from './images/StartNow.png'
 import DropdownArrow from './images/DropdownArrow.png'
+import Flag1Found from './FlagCount.js'
 
-function Game() {
+function Game(props) {
  
     return (
         <div id="white-background">
@@ -51,6 +52,7 @@ function Game() {
                     Registered trademarks are the property of their own respective owners.
                 </p>
             </div>
+            <Flag1Found onFlagFound={props.onFlagFound}/>
         </div>
     )
 }
