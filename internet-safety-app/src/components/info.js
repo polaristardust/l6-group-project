@@ -12,7 +12,7 @@ function Info() {
 
   function changePage(page) {
     setCurrentPage(page);
-  }
+np  }
   
   return (
     <div className="Info">

@@ -8,7 +8,7 @@
 
 /*LIGHT AND DARK MODE */
 
-body {
+.Info {
   padding: 25px;
   background-color: #16161a;
   color: #f0f0f0;
@@ -35,7 +35,7 @@ body {
     --green: #2cd67d;
 }
 
-html {
+.Info {
     font-size: 10px;
     font-family: 'Open Sans', Arial, sans-serif;
     color: var(--white);
