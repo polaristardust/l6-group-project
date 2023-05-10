@@ -64,3 +64,11 @@ p, span {
 .green-background {
     background-color: green;
   }
+
+#div-image-style{
+    padding: 10px 0px;
+}
+
+img{
+    padding: 5px;
+}

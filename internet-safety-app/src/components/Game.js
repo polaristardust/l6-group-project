@@ -1,12 +1,12 @@
 import './Game.css';
 import { Link } from "react-router-dom";
-import CautionSign from './images/cautionSign.png'
+import CautionSign from './images/CautionSign.png'
 import StartNow from './images/StartNow.png'
 import DropdownArrow from './images/DropdownArrow.png'
 // import Flag1Found from './FlagCount.js'
 import React, { useState } from 'react';
 // // import Flag1Found from './FlagCount.js'
-import {Flag1, Flag2} from './FlagCount.js'
+import {Flag1, Flag2, Flag3} from './FlagCount.js'
 import Flag1Found from './FlagCount.js'
 
 function Game(props) {
@@ -25,7 +25,7 @@ function Game(props) {
             <div>
                 <h2 id="subject" onClick={() => handleClick(0)} className={clicked[0] ? 'green-background' : ''}>{'>>'}!! -You-have won an $90-CVS-Gift-Card</h2>
                 <div id="address">
-                    <img src={CautionSign} alt="caution sign" onClick={() => handleClick(1)} className={clicked[1] ? 'green-background' : ''} width="45" height="40"/>
+                    <Flag3 onFlagFound={props.onFlagFound}/>
                     <div id="address-text">
                         <div id="address-from">
                             <h5>-CVS Rewards-
