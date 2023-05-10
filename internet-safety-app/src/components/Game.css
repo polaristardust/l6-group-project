@@ -1,3 +1,7 @@
+#instructions {
+    border: 3px solid #000;
+}
+
 #white-background{
     background-color: #fff;
     padding: 20px;
@@ -59,4 +63,16 @@ h2, h3 {
 p, span {
     color: #5e5e5e;
     font-size: 12px;
+}
+
+.green-background {
+    background-color: green;
+  }
+
+#div-image-style{
+    padding: 10px 0px;
+}
+
+img{
+    padding: 5px;
 }
