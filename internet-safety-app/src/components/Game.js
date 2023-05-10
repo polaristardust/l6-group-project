@@ -4,20 +4,29 @@ import CautionSign from './images/cautionSign.png'
 import StartNow from './images/StartNow.png'
 import DropdownArrow from './images/DropdownArrow.png'
 import Flag1Found from './FlagCount.js'
+import React, { useState } from 'react';
 
 function Game(props) {
- 
+
+    const [clicked, setClicked] = useState(Array(8).fill(false));
+
+    function handleClick(index) {
+        const updatedClicked = [...clicked];
+        updatedClicked[index] = true;
+        setClicked(updatedClicked);
+
+    }
 
     return (
         <div id="white-background">
             <div>
-                <h2 id="subject">{'>>'}!! -You-have won an $90-CVS-Gift-Card</h2>
+                <h2 id="subject" onClick={() => handleClick(0)} className={clicked[0] ? 'green-background' : ''}>{'>>'}!! -You-have won an $90-CVS-Gift-Card</h2>
                 <div id="address">
-                    <img src={CautionSign} alt="caution sign" width="45" height="40"/>
+                    <img src={CautionSign} alt="caution sign" onClick={() => handleClick(1)} className={clicked[1] ? 'green-background' : ''} width="45" height="40"/>
                     <div id="address-text">
                         <div id="address-from">
-                            <h5>-CVS Rewards- </h5><h5>afjngbapeofkdsfn@cvs.pharmacy.us</h5>
-                            <p id="address-info"><u>via</u> sendgrid.net</p>
+                            <h5>-CVS Rewards- </h5><h5 onClick={() => handleClick(2)} className={clicked[2] ? 'green-background' : ''}>afjngbapeofkdsfn@cvs.pharmacy.us</h5>
+                            <p id="address-info"><u >via</u> sendgrid.net</p>
                         </div>
                         <div id="address-to">
                             <p>to me</p>
