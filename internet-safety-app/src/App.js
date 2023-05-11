@@ -21,6 +21,7 @@ function App() {
       backgroundSize: 'cover'
     }}>
       <NavBar />
+      {/* <Info /> */}
       <p id="red-flags-counter">Red flags found: {foundFlags}</p>
       <Game onFlagFound={increaseFoundFlags} />
     </div>

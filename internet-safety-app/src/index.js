@@ -8,15 +8,16 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import Game from './components/Game';
+import Info from './components/Info';
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App />,
+    element: <Info />,
   },
   {
     path: "/game",
-    element: <Game />
+    element: <App />
   }
 ]);
 
