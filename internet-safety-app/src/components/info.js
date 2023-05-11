@@ -1,6 +1,9 @@
 import './Info.css'
 import { Link } from "react-router-dom";
 import { useState } from 'react';
+import security from './images/security.jpg'
+import Vpn from './images/Vpn.png'
+import { useState } from 'react';
 
 function Info() {
   const [textValue, settextValue] = useState("");
@@ -21,17 +24,6 @@ np  }
     {currentPage}
     <button onClick={()=>changePage(<NavBar />)}>Page One</button><button onClick={()=>changePage(<Game/>)}>Page Two</button>
     <div className="w3-content" style={{maxWidth: '1200px'}}>
-
-      <header>
-        <a href="game.html">Game</a>
-        <a href="index.html" id="curr">Home</a>
-        <a href="info.html">Other Info</a>
-      </header>
-
-      <p>
-        <button onClick={() => darkMode()}>Dark Mode</button>
-        <button onClick={() => lightMode()}>Light Mode</button>
-      </p>
 
       <div className="w3-main" style={{marginLeft: '250px'}}>
         <div className="w3-hide-large" style={{marginTop: '83px'}}></div>
@@ -56,7 +48,6 @@ np  }
           <div class="w3-row w3-padding-32">
           <div class="w3">
             <p></p>
-            <img src={scamWebsite} alt="scam website"/>
           </div>
         </div> <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
           <h2 class="w3-wide">Ways to Keep Yourself Safe</h2>
@@ -84,7 +75,7 @@ np  }
           <div class="w3-row w3-padding-32">
             <div class="w3">
               <p></p>
-              <img src={security} alt="security"/>s
+              <img src={security} alt="security"/>
             </div>
           </div>
         </div>
@@ -93,7 +84,6 @@ np  }
         <div class="w3-row w3-padding-32">
           <div class="w3">
             <p></p>
-            <img src={scamWebsite} alt="scam website"/>
           </div>
         </div> <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
           <h2 class="w3-wide">Using a VPN</h2>
@@ -109,7 +99,7 @@ np  }
           <div class="w3-row w3-padding-32">
             <div class="w3">
               <p></p>
-              <img src={vpn} alt="vpn"/>
+              
             </div>
           </div>
       </div>
