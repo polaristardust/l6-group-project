@@ -136,7 +136,7 @@ function Flag8Found(props) {
     }
 
     return (
-            <h4 style={{ display: 'inline-block', margin: '0px', fontWeight: "normal" }} onClick={clickedFlag8Found} className={foundFlag8 ? 'green-background' : ''}>{props.children}</h4>
+            <h3 style={{ display: 'inline-block', margin: '0px', fontWeight: "normal" }} onClick={clickedFlag8Found} className={foundFlag8 ? 'green-background' : ''}>{props.children}</h3>
     )
 }
 
@@ -184,7 +184,7 @@ function Flag11Found(props) {
     }
 
     return (
-            <h4 style={{ display: 'inline-block', margin: '0px', fontWeight: "normal" }} onClick={clickedFlag11Found} className={foundFlag11 ? 'green-background' : ''}>{props.children}</h4>
+            <p style={{ display: 'inline-block', margin: '0px', fontWeight: "normal" }} onClick={clickedFlag11Found} className={foundFlag11 ? 'green-background' : ''}>{props.children}</p>
     )
 }
 
