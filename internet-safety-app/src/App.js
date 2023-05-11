@@ -22,7 +22,7 @@ function App() {
     }}>
       <NavBar />
       {/* <Info /> */}
-      <p id="red-flags-counter">Red flags found: {foundFlags}/9</p>
+      <p id="red-flags-counter">Red flags found: {foundFlags}/11</p>
       <Game onFlagFound={increaseFoundFlags} />
     </div>
     
