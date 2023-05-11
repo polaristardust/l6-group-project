@@ -17,7 +17,7 @@ function Flag1Found(props) {
 
     return (
         <div >
-            <img src={StartNow} onClick={clickedFlag1Found} id="img-div-style" className={foundFlag1 ? 'green-background' : ''} alt="start now" width="120" height="40"/>
+            <img src={StartNow} onClick={clickedFlag1Found} id="img-div-style" className={foundFlag1 ? 'green-background' : ''} alt="start now" width="120" height="50"/>
         </div>
     )
 }

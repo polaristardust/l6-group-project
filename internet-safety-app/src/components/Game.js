@@ -199,7 +199,7 @@ function Game(props) {
                     <div className="center">
                         <Flag1 onFlagFound={props.onFlagFound}/>
                         <h3 className="centerText">
-                            You have <b><Flag9 onFlagFound={props.onFlagFound}>4 minutes and 14 seconds</Flag9></b> to activate this offer!    
+                            You have <Flag9 onFlagFound={props.onFlagFound}><b>4 minutes and 14 seconds</b></Flag9> to activate this offer!    
                         </h3>
                     </div>
                     <div id="red-bar"></div>
