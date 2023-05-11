@@ -1,8 +1,6 @@
  import './Info.css';
  import { Link } from "react-router-dom";
  import { useState } from 'react';
- import NavBar from './components/NavBar'
- import Game from './components/Game'
 
  function Info() {
    const [textValue, setTextValue] = useState("");
@@ -51,7 +49,7 @@
            <div class="w3-row w3-padding-32">
            <div class="w3">
              <p></p>
-             <img src={scamWebsite} alt="scam website"/>
+             <img src={ScamWebsite} alt="scam website"/>
            </div>
          </div> <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
            <h2 class="w3-wide">Ways to Keep Yourself Safe</h2>
@@ -88,7 +86,7 @@
          <div class="w3-row w3-padding-32">
            <div class="w3">
              <p></p>
-             <img src={scamWebsite} alt="scam website"/>
+             <img src={ScamWebsite} alt="scam website"/>
            </div>
          </div> <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
            <h2 class="w3-wide">Using a VPN</h2>
@@ -104,7 +102,7 @@
            <div class="w3-row w3-padding-32">
              <div class="w3">
                <p></p>
-               <img src={vpn} alt="vpn"/>
+               <img src={Vpn} alt="vpn"/>
              </div>
            </div>
        </div>
@@ -115,11 +113,5 @@
   
    );
  }
-
-function Info() {
-  return(
-    <div></div>
-  )
-}
 
 export default Info;
