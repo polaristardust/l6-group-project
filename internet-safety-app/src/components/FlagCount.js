@@ -136,7 +136,7 @@ function Flag8Found(props) {
     }
 
     return (
-            <h3 style={{ display: 'inline-block', margin: '0px', fontWeight: "normal" }} onClick={clickedFlag8Found} className={foundFlag8 ? 'green-background' : ''}>{props.children}</h3>
+            <h4 style={{ display: 'inline-block', margin: '0px', fontWeight: "normal" }} onClick={clickedFlag8Found} className={foundFlag8 ? 'green-background' : ''}>{props.children}</h4>
     )
 }
 
@@ -188,6 +188,24 @@ function Flag11Found(props) {
     )
 }
 
+// function CheckFlagsFound(){
+
+//     console.log("All flags found");
+
+//     // const [foundFlags, setFlagFound] = useState(false);
+
+//     function FlagsFound() {
+//         // if (Flag1Found && Flag2Found && Flag3Found && Flag4Found && Flag5Found && Flag6Found && Flag7Found && Flag8Found && Flag9Found && Flag10Found && Flag11Found) {
+//         //     // setFlagFound(true);
+//         //     console.log("All flags found");
+//         // }
+//     }    
+
+//     // return(foundFlags)
+
+    
+// }
+
 // export default Flag1Found
 // module.exports = {
 //     Flag1: Flag1Found,
@@ -204,3 +222,4 @@ export const Flag8 = Flag8Found;
 export const Flag9 = Flag9Found;
 export const Flag10 = Flag10Found;
 export const Flag11 = Flag11Found;
+// export const FlagsFound = CheckFlagsFound;
