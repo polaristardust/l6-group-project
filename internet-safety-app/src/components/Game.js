@@ -27,8 +27,8 @@ function Game(props) {
                 <div id="instructions">
                     <h2><b>Can you spot a scam?</b></h2>
                     <p id="instructions-p">Look at the following page and click on any red flags that could indicate a scam.</p>
-                    <div id="start">
-                        <h2><b>Let's get started</b></h2>
+                    <div>
+                        <h2>Let's get started!</h2>
                         <button id="arrow" onClick={()=> setModalVisible(false)}>➜</button>
                     </div>
                 </div>
