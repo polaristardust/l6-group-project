@@ -54,7 +54,7 @@ function Info() {
 include protecting personal information, avoiding cyberbullying and harassment, avoiding scams and fraud, and avoiding exposure to inappropriate or harmful content. Internet safety involves being aware of the potential risks and taking steps to minimize them. This may include using strong passwords, using antivirus software, avoiding suspicious links and downloads, and being cautious about sharing personal information online. Internet safety is important for all users, including children, who may be particularly vulnerable to online threats. Parents and caregivers play an important role in teaching children how to use the 
 internet safely and responsibly. This can involve setting rules and limits for internet use, monitoring children's online activity, and educating them about online safety.</p>
         </div>
-
+ 
         {/* <hr style={{height: '2px', maxWidth: '600px', color: 'gray', backgroundColor: 'gray', margin: 'auto'}} /> */}
 
         <div className="w3-container w3-content w3-center w3-padding-64" style={{maxWidth: '800px'}} id="band">
