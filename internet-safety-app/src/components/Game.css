@@ -120,6 +120,11 @@ p, span {
     font-size: 12px;
 }
 
+p.w3-justify{
+    color: white;
+    font-size: 16px;
+}
+
 .green-background {
     background-color: rgba(58, 255, 32, 0.829);
   }

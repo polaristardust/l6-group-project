@@ -8,7 +8,7 @@ function NavBar() {
                 <h1>Scammio</h1>
             </div>
             <div className='pages'>
-                <Link to="/">Information</Link>
+                <Link to="/info">Information</Link>
                 <Link to="/game">Game</Link>
             </div>
         </div>

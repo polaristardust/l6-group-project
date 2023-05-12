@@ -12,7 +12,7 @@ import Info from './components/Info';
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/info",
     element: <Info />,
   },
   {
